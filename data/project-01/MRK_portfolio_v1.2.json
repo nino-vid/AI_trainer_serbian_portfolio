@@ -1,0 +1,992 @@
+{
+  "dataset_name": "Serbian_Conversational_Speech_Annotation",
+  "data_samples": [
+    {
+      "sample_id": "SRB_SRECKO_MRK",
+      "audio_metadata": {
+        "source_url": "https://www.youtube.com/watch?v=e4X56sm8eyo",
+        "audio_quality": "noisy_phone_recording_with_music_and_crowd",
+        "primary_dialect": "Southern Serbian features reported for SPK_01 and SPK_02; see speaker_profiles",
+        "environmental_noise": "background_music_and_crowd_chatter",
+        "original_sample_rate_hz": null,
+        "capture_device": "mobile_phone"
+      },
+      "annotations": [
+        {
+          "turn_id": 1,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 0,
+            "end_ms": 3100
+          },
+          "verbatim_acoustic": "Burazeru, na eks je l' mož' da popiješ to, a?",
+          "normalized_orthographic": "Burazeru, na eks je l' možeš da popiješ to, a?",
+          "segment_id": "SRB_MRK_001",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["standard_slang", "interrogative"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Bro, can you chug that in one go, huh?",
+          "english_localization_proposed": "Bro, can you chug that in one go, huh?",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 2,
+          "speaker_id": "SPK_02_SRECKO",
+          "timestamps": {
+            "start_ms": 3300,
+            "end_ms": 4800
+          },
+          "verbatim_acoustic": "Šta je ovo za m-, brate.",
+          "normalized_orthographic": "Šta je ovo za m[ene], brate.",
+          "segment_id": "SRB_MRK_002",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": ["mumbled", "slurred_speech"],
+            "linguistic_features": [],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": [
+              "boastful_performance",
+              "peer_challenge_response"
+            ]
+          },
+          "legacy_tags_requiring_evidence": ["restored_context"],
+          "english_localization_original": "This is light work for me, bro.",
+          "english_localization_proposed": "This is light work for me, bro.",
+          "standard_serbian_paraphrase": "Šta je to za mene, brate?",
+          "english_literal_translation": "What is this for m—, bro?",
+          "qa_notes": [
+            "Contextual paraphrase; annotator reports audible partial word and scene support.",
+            "Meaning judged high-confidence by annotator from scene, but not every syllable acoustically explicit.",
+            "Contextual reconstruction of partial m- confirmed by annotator; use only as pragmatic localization, not word-for-word translation."
+          ],
+          "reconstructed_form": "Šta je ovo za mene, brate.",
+          "segment_type": "speech",
+          "reconstructed_speech": "Šta je ovo za mene, brate."
+        },
+        {
+          "turn_id": 3,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 4900,
+            "end_ms": 6800
+          },
+          "verbatim_acoustic": "Dokaži burazeru, dokaži!",
+          "normalized_orthographic": "Dokaži burazeru, dokaži!",
+          "segment_id": "SRB_MRK_003",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": ["raised_voice"],
+            "linguistic_features": ["imperative"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Prove it, bro, prove it!",
+          "english_localization_proposed": "Prove it, bro, prove it!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 4,
+          "speaker_id": null,
+          "timestamps": {
+            "start_ms": 6800,
+            "end_ms": 9100
+          },
+          "verbatim_acoustic": "<bg_music> <unintelligible> ... </unintelligible> </bg_music>",
+          "normalized_orthographic": "[Neraspoznatljiv govor uz pozadinsku muziku]",
+          "segment_id": "SRB_MRK_004",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [],
+            "audio_conditions": ["ambient_noise", "music_masking"],
+            "vocal_events": ["non_speech"],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "[Unintelligible speech with background music]",
+          "english_localization_proposed": "[Unintelligible speech with background music]",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "Mixed event may be split into music and unintelligible speech if time bounds differ."
+          ],
+          "segment_type": "audio_event",
+          "event_type": "background_music_and_unintelligible_speech"
+        },
+        {
+          "turn_id": 5,
+          "speaker_id": "SPK_03_BACKGROUND_1",
+          "timestamps": {
+            "start_ms": 9100,
+            "end_ms": 11200
+          },
+          "verbatim_acoustic": "<bg_music> <overlap> Daj da ti pomognem da ga otvorim! </overlap> </bg_music>",
+          "normalized_orthographic": "Daj da ti pomognem da ga otvorim!",
+          "segment_id": "SRB_MRK_005",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [],
+            "audio_conditions": [
+              "overlapping_speech",
+              "ambient_distance",
+              "background_music"
+            ],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Let me help you open it!",
+          "english_localization_proposed": "Let me help you open it!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "Background placement and true speech overlap are different concepts; tag is justified only during 10.4–11.2s."
+          ],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 6,
+          "speaker_id": "SPK_04_BACKGROUND_2",
+          "timestamps": {
+            "start_ms": 10400,
+            "end_ms": 11700
+          },
+          "verbatim_acoustic": "<overlap> Daj da otvorim, daj! </overlap>",
+          "normalized_orthographic": "Daj da otvorim, daj!",
+          "segment_id": "SRB_MRK_006",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [],
+            "audio_conditions": ["overlapping_speech", "ambient_distance"],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Give it here, let me open it, come on!",
+          "english_localization_proposed": "Give it here, let me open it, come on!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": ["Overlap supported by 10.4–11.2s intersection."],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 7,
+          "speaker_id": "SPK_03_BACKGROUND_1",
+          "timestamps": {
+            "start_ms": 12000,
+            "end_ms": 12800
+          },
+          "verbatim_acoustic": "Evo ga, evo ga.",
+          "normalized_orthographic": "Evo ga, evo ga.",
+          "segment_id": "SRB_MRK_007",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["colloquial_expression"],
+            "audio_conditions": ["overlapping_speech"],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": ["success_announcement"]
+          },
+          "english_localization_original": "There it is, there it is.",
+          "english_localization_proposed": "There it is, there it is.",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "100 ms confirmed overlap reported by annotator.",
+            "100 ms spoken overlap manually verified by annotator; retain."
+          ],
+          "segment_type": "speech",
+          "contextual_reference": "successful_bottle_opening"
+        },
+        {
+          "turn_id": 8,
+          "speaker_id": "SPK_04_BACKGROUND_2",
+          "timestamps": {
+            "start_ms": 12700,
+            "end_ms": 15000
+          },
+          "verbatim_acoustic": "<overlap> E, to, to! Otresi bato... otresi! </overlap>",
+          "normalized_orthographic": "E, to, to! Otresi bato... otresi!",
+          "segment_id": "SRB_MRK_008",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["idiomatic_slang"],
+            "audio_conditions": ["overlapping_speech"],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": ["cheering"]
+          },
+          "english_localization_original": "Yes, just like that! Down it, mate... down it!",
+          "english_localization_proposed": "Yes, just like that! Down it, mate... down it!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 9,
+          "speaker_id": "SPK_03_BACKGROUND_1",
+          "timestamps": {
+            "start_ms": 14000,
+            "end_ms": 15100
+          },
+          "verbatim_acoustic": "<overlap> <unintelligible> ... </unintelligible> </overlap>",
+          "normalized_orthographic": "[Neraspoznatljivo]",
+          "segment_id": "SRB_MRK_009",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [],
+            "audio_conditions": ["overlapping_speech"],
+            "vocal_events": ["unintelligible_speech"],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "[Unintelligible]",
+          "english_localization_proposed": "[Unintelligible]",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 10,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 19300,
+            "end_ms": 28700
+          },
+          "verbatim_acoustic": "Tepaj Rmzo, tepaj! <laughter> ihihihi </laughter> Lele-lele, op-op-op-op-op, do kraja, do kraja... o-o, lele, lele, lele, op!",
+          "normalized_orthographic": "Tepaj Rmzo, tepaj! Lele, lele, op, op, op, op, op, do kraja, do kraja, o-o, lele, lele, lele, op!",
+          "segment_id": "SRB_MRK_010",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [
+              "heavy_dialect",
+              "regional_slang",
+              "drinking_context",
+              "cultural_interjections"
+            ],
+            "audio_conditions": [],
+            "vocal_events": ["laughter_present"],
+            "emotion": null,
+            "pragmatic_function": ["encouragement"]
+          },
+          "english_localization_original": "Chug it, Rmza, chug it! <laughter> eheheh </laughter> Damn, let's go, go, go! All the way, all the way! Oh damn, let's go!",
+          "english_localization_proposed": "Chug it, Rmza, chug it! [laughter] Oh man, oh man! Go, go, go, go, go! All the way, all the way! Whoa, oh man, oh man, let's go!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": "Go at it, Rmza, go at it! [laughter] Oh my, oh my! Op, op, op, op, op! All the way, all the way... Oh, oh, oh my, oh my, oh my, op!",
+          "qa_notes": [
+            "The Serbian interjection 'lele' is localized as 'Oh man' to preserve the excited tone without introducing profanity.",
+            "The phrase 'tepaj' is localized as 'chug it' based on the drinking context."
+          ],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 11,
+          "speaker_id": "SPK_04_BACKGROUND_2",
+          "timestamps": {
+            "start_ms": 21200,
+            "end_ms": 26700
+          },
+          "verbatim_acoustic": "<overlap> Tooo, na eks! Tooooooo, toooooooo, to, to </overlap>",
+          "normalized_orthographic": "To, na eks! To, to, to, to",
+          "segment_id": "SRB_MRK_011",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [],
+            "audio_conditions": ["overlapping_speech"],
+            "vocal_events": ["crowd_vocalizations"],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Yes, in one go! Yeeeees, yeeeeeees, yes, yes",
+          "english_localization_proposed": "Yes, in one go! Yeeeees, yeeeeeees, yes, yes",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 12,
+          "speaker_id": "SPK_03_BACKGROUND_1",
+          "timestamps": {
+            "start_ms": 29500,
+            "end_ms": 30000
+          },
+          "verbatim_acoustic": "Bravo!",
+          "normalized_orthographic": "Bravo!",
+          "segment_id": "SRB_MRK_012",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["standard_speech"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Brilliant!",
+          "english_localization_proposed": "Brilliant!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 13,
+          "speaker_id": "SPK_04_BACKGROUND_2",
+          "timestamps": {
+            "start_ms": 30800,
+            "end_ms": 32400
+          },
+          "verbatim_acoustic": "<overlap> Tooooooo, bravo! </overlap>",
+          "normalized_orthographic": "To, bravo!",
+          "segment_id": "SRB_MRK_013",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["standard_speech"],
+            "audio_conditions": ["overlapping_speech"],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Yes, brilliant!",
+          "english_localization_proposed": "Yes, brilliant!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 14,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 30000,
+            "end_ms": 32800
+          },
+          "verbatim_acoustic": "<laughter> ... </laughter> Bravo! Kaži nešto.",
+          "normalized_orthographic": "Bravo! Reci nešto.",
+          "segment_id": "SRB_MRK_014",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["standard_speech"],
+            "audio_conditions": [],
+            "vocal_events": ["laughter_present"],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Brilliant! Say something.",
+          "english_localization_proposed": "Brilliant! Say something.",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "Consider independent timed vocal-event segment(s) for laughter; same-speaker attribution only if audibly supported."
+          ],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 15,
+          "speaker_id": "SPK_02_SRECKO",
+          "timestamps": {
+            "start_ms": 32800,
+            "end_ms": 33500
+          },
+          "verbatim_acoustic": "MRK!",
+          "normalized_orthographic": "Mrk!",
+          "segment_id": "SRB_MRK_015",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": ["shouting"],
+            "linguistic_features": [],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": [
+              "forceful_dismissal",
+              "interaction_termination"
+            ]
+          },
+          "legacy_tags_requiring_evidence": [
+            "expletive_subtext",
+            "hyper_masculine_boast"
+          ],
+          "english_localization_original": "Nailed it!",
+          "english_localization_proposed": "Fuck off!",
+          "standard_serbian_paraphrase": "Odjebi!",
+          "english_literal_translation": "Mrk!",
+          "qa_notes": [
+            "Strong pragmatic localization, not dictionary meaning of MRK.",
+            "MRK pronunciation/meaning linked to clip-specific context as reported by annotator.",
+            "Annotator-confirmed pragmatic interpretation: forceful dismissal/command to stop interaction (\"Odjebi\"); not a dictionary-equivalent literal translation. Contextual stance must not be presented as a verified lexical meaning."
+          ],
+          "segment_type": "speech",
+          "pragmatic_interpretation": {
+            "serbian": "Odjebi!",
+            "english": "Fuck off!",
+            "evidence": "annotator analysis of spoken and visual scene",
+            "scope": "scene_specific",
+            "status": "annotator_confirmed"
+          }
+        },
+        {
+          "turn_id": 16,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 33800,
+            "end_ms": 34500
+          },
+          "verbatim_acoustic": "Mr' <laughter> ahahahahhaha </laughter>",
+          "normalized_orthographic": "Mr[k]... <laughter> ahahahahhaha </laughter>",
+          "segment_id": "SRB_MRK_016",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["truncated_repetition"],
+            "audio_conditions": [],
+            "vocal_events": ["laughter_present"],
+            "emotion": null,
+            "pragmatic_function": ["echo_of_previous_utterance"]
+          },
+          "legacy_tags_requiring_evidence": [
+            "truncated_expletive",
+            "intoxicated_giggle"
+          ],
+          "english_localization_original": "I f***— <laughter> ahahahahhaha </laughter>",
+          "english_localization_proposed": "Fu—",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "Abbreviated repetition of MRK reported; avoid invented expletive.",
+            "Laughter speaker unresolved: could be same speaker or background; do not assign automatically.",
+            "Consider independent timed vocal-event segment(s) for laughter; same-speaker attribution only if audibly supported.",
+            "In the chosen localized rendering, partial repetition of “Fuck off!” may be “Fu—”; literal vocal form remains “Mr’”."
+          ],
+          "reconstructed_form": "Mrk!",
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 17,
+          "speaker_id": "SPK_03_BACKGROUND_1",
+          "timestamps": {
+            "start_ms": 35800,
+            "end_ms": 36800
+          },
+          "verbatim_acoustic": "Kaži nešto, Mrk!",
+          "normalized_orthographic": "Kaži nešto, Mrk!",
+          "segment_id": "SRB_MRK_017",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["background_voice", "crowd_echo"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": ["reflexive_repetition", "encouragement"]
+          },
+          "english_localization_original": "Say something, Mrk!",
+          "english_localization_proposed": "Say something, Mrk!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 18,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 36900,
+            "end_ms": 38000
+          },
+          "verbatim_acoustic": "Čekaj, dobra li je?",
+          "normalized_orthographic": "Čekaj, da li je dobra?",
+          "segment_id": "SRB_MRK_018",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["dialect_syntax", "interrogative"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Wait, is it any good?",
+          "english_localization_proposed": "Wait, is it any good?",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 19,
+          "speaker_id": "SPK_02_SRECKO",
+          "timestamps": {
+            "start_ms": 38700,
+            "end_ms": 39500
+          },
+          "verbatim_acoustic": "O(d)lična.",
+          "normalized_orthographic": "Odlična.",
+          "segment_id": "SRB_MRK_019",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": ["slurred_speech"],
+            "linguistic_features": [],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "legacy_tags_requiring_evidence": [
+            "intoxication_marker",
+            "devoiced_consonant",
+            "swallowed_phoneme"
+          ],
+          "english_localization_original": "Incred'ble.",
+          "english_localization_proposed": "Excellent.",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "Phonetic reduction belongs in pronunciation notes, not translated spelling.",
+            "Possible intoxication may be reported only as contextual scene inference, not established fact.",
+            "Identity of word Odlična confirmed by annotator; partially articulated /d/ reported. Do not label devoicing without evidence."
+          ],
+          "phonetic_observation": {
+            "word": "Odlična",
+            "target_phoneme": "/d/",
+            "observation": "partially_articulated",
+            "source": "annotator_audio_review",
+            "status": "annotator_confirmed"
+          },
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 20,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 39500,
+            "end_ms": 40300
+          },
+          "verbatim_acoustic": "Zajebala vek?",
+          "normalized_orthographic": "Da li je nadmašila sva očekivanja?",
+          "segment_id": "SRB_MRK_020",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [
+              "context_dependent_colloquial_expression",
+              "slang"
+            ],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Is it absolutely next-level?",
+          "english_localization_proposed": "Is it really that good?",
+          "standard_serbian_paraphrase": "Je l’ toliko dobra?",
+          "english_literal_translation": "Did it outdo everything?",
+          "qa_notes": [
+            "Meaning of Zajebala vek? needs separately documented idiomatic/semantic evidence; preserve verbatim.",
+            "Annotator defines expression as extreme/outstanding, either positively or negatively; surrounding praise suggests positive sense in this scene. Not asserted as independently verified standard idiom."
+          ],
+          "segment_type": "speech",
+          "semantic_interpretation": {
+            "general": "something extreme, exceptional, remarkably good or bad depending on context",
+            "scene_specific": "the drink is exceptionally good",
+            "basis": "annotator contextual interpretation"
+          }
+        },
+        {
+          "turn_id": 21,
+          "speaker_id": "SPK_02_SRECKO",
+          "timestamps": {
+            "start_ms": 40400,
+            "end_ms": 40800
+          },
+          "verbatim_acoustic": "Uf!",
+          "normalized_orthographic": "Uf!",
+          "segment_id": "SRB_MRK_021",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["exclamation"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Damn right!",
+          "english_localization_proposed": "Oof!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": "Uf!",
+          "qa_notes": [
+            "Interjection: determine Oof/Phew from precise audio context."
+          ],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 22,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 41400,
+            "end_ms": 42500
+          },
+          "verbatim_acoustic": "A kako s' ti zoveš?",
+          "normalized_orthographic": "A kako se ti zoveš?",
+          "segment_id": "SRB_MRK_022",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["phonetic_contraction"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "And what's your name?",
+          "english_localization_proposed": "And what's your name?",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 23,
+          "speaker_id": "SPK_02_SRECKO",
+          "timestamps": {
+            "start_ms": 42700,
+            "end_ms": 43400
+          },
+          "verbatim_acoustic": "Srećko.",
+          "normalized_orthographic": "Srećko.",
+          "segment_id": "SRB_MRK_023",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["standard_speech"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "Srećko.",
+          "english_localization_proposed": "Srećko.",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 24,
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "timestamps": {
+            "start_ms": 43600,
+            "end_ms": 44100
+          },
+          "verbatim_acoustic": "Ne!",
+          "normalized_orthographic": "Ne!",
+          "segment_id": "SRB_MRK_024",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": false,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["standard_speech"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "No!",
+          "english_localization_proposed": "No!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 25,
+          "speaker_id": "SPK_02_SRECKO",
+          "timestamps": {
+            "start_ms": 44400,
+            "end_ms": 45200
+          },
+          "verbatim_acoustic": "Srećko, be!",
+          "normalized_orthographic": "Srećko, be!",
+          "segment_id": "SRB_MRK_025",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": ["dialect_particle"],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": []
+          },
+          "english_localization_original": "I'm Srećko, damn it!",
+          "english_localization_proposed": "Srećko, man!",
+          "standard_serbian_paraphrase": "Srećko, bre!",
+          "english_literal_translation": null,
+          "qa_notes": [
+            "'be' is a discourse particle; maintain original in normalized field.",
+            "be/bre: preserve local particle in orthographic transcription; standard paraphrase may expand to 'bre' only if sociolinguistically justified.",
+            "Regional 'be' maps to bre in broader colloquial standardization, while verbatim retains 'be'."
+          ],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 26,
+          "speaker_id": "SPK_04_BACKGROUND_2",
+          "timestamps": {
+            "start_ms": 45300,
+            "end_ms": 46100
+          },
+          "verbatim_acoustic": " Sin Dragan, bre! ",
+          "normalized_orthographic": "Sin Dragan, čoveče!",
+          "segment_id": "SRB_MRK_026",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [],
+            "audio_conditions": [],
+            "vocal_events": [],
+            "emotion": null,
+            "pragmatic_function": ["background_heckling"]
+          },
+          "english_localization_original": "You're son Dragan, man!",
+          "english_localization_proposed": "You're son Dragan, man!",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "English relationship reference ambiguous; manual gloss review."
+          ],
+          "segment_type": "speech"
+        },
+        {
+          "turn_id": 27,
+          "speaker_id": "SPK_02_SRECKO",
+          "timestamps": {
+            "start_ms": 47100,
+            "end_ms": 48500
+          },
+          "verbatim_acoustic": "Ma, sin Dragan...  ha-haaa ",
+          "normalized_orthographic": "Ma, sin Dragan...",
+          "segment_id": "SRB_MRK_027",
+          "annotator_id": "Nino",
+          "annotation_guideline_version": "1.1",
+          "review_status": "annotator_reviewed_pending_independent_audio_validation",
+          "review_required": true,
+          "evidence_sources": ["annotator_audio_review"],
+          "annotation_tags": {
+            "speech_delivery": [],
+            "linguistic_features": [],
+            "audio_conditions": [],
+            "vocal_events": ["laughter_present"],
+            "emotion": null,
+            "pragmatic_function": ["reluctant_agreement"]
+          },
+          "english_localization_original": "Yeah, whatever, son Dragan...  ha-haaa ",
+          "english_localization_proposed": "Yeah, whatever, son Dragan...  ha-haaa ",
+          "standard_serbian_paraphrase": null,
+          "english_literal_translation": null,
+          "qa_notes": [
+            "Acceptance of interlocutor version reported by annotator; literal translation not yet confirmed.",
+            "Consider independent timed vocal-event segment(s) for laughter; same-speaker attribution only if audibly supported."
+          ],
+          "segment_type": "speech"
+        }
+      ],
+      "scene_context": {
+        "activity": "group_encouragement_during_drinking_challenge",
+        "alcohol_consumption": "reported_by_annotator_from_video",
+        "interpretation_scope": "contextual; not a clinical intoxication determination",
+        "social_interaction": "peer_challenge_and_boastful_performance",
+        "speaker_state_interpretation": {
+          "possible_intoxication": true,
+          "basis": [
+            "video_context_of_alcohol_consumption",
+            "annotator_perceived_slurred_speech"
+          ],
+          "scope": "contextual_inference_not_clinical_fact"
+        }
+      },
+      "speaker_profiles": [
+        {
+          "speaker_id": "SPK_01_INTERVIEWER",
+          "role": "interviewer",
+          "dialect_assessment": "southern_serbian_features_identified_by_annotator",
+          "dialect_evidence": "human annotator auditory judgement; detailed phonological evidence pending",
+          "classification_scope": "speaker_specific; Prizren–Timok subgroup not independently established"
+        },
+        {
+          "speaker_id": "SPK_02_SRECKO",
+          "role": "participant",
+          "dialect_assessment": "southern_serbian_features_identified_by_annotator",
+          "dialect_evidence": "human annotator auditory judgement; detailed phonological evidence pending",
+          "classification_scope": "speaker_specific; Prizren–Timok subgroup not independently established"
+        },
+        {
+          "speaker_id": "SPK_03_BACKGROUND_1",
+          "role": "background_speaker",
+          "dialect_assessment": "not_assessed",
+          "dialect_evidence": null
+        },
+        {
+          "speaker_id": "SPK_04_BACKGROUND_2",
+          "role": "background_speaker",
+          "dialect_assessment": "not_assessed",
+          "dialect_evidence": null
+        }
+      ],
+      "annotation_status": "working_draft; source audio not independently audited by assistant"
+    }
+  ],
+  "dataset_version": "1.3-review",
+  "project_type": "independent_portfolio_demonstration",
+  "language": "sr",
+  "annotator_id": "Nino",
+  "annotation_guideline_version": "1.1",
+  "annotation_guideline_file": "MRK_ANNOTATION_GUIDELINES_v1_1.md",
+  "verification_status": "annotator_context_confirmed_pending_independent_media_QA",
+  "source": {
+    "url": "https://www.youtube.com/watch?v=e4X56sm8eyo",
+    "media_type": "video",
+    "reuse_rights": "not_verified",
+    "usage_rights": "not_verified"
+  },
+  "tasks": [
+    "verbatim_transcription",
+    "speaker_diarization",
+    "linguistic_annotation",
+    "orthographic_normalization",
+    "contextual_localization",
+    "quality_assurance"
+  ],
+  "intended_use": "independent demonstration of Serbian-language annotation skills"
+}

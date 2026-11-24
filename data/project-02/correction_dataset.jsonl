@@ -1,0 +1,103 @@
+Serbian LLM Response Evaluation — Error Analysis Report
+Project: Everyday Serbian
+Language: Serbian
+Models used in responses file: Gemini and Grok
+Author/evaluator: Nino (portfolio project)
+
+1. Purpose
+
+This report reviews language and instruction-following problems found in a 40-prompt comparison of Serbian language responses. The tasks cover everyday communication, grammar, regional expressions, and cultural meaning. The goal is to
+identify useful error patterns and suggest clear feedback for future evaluations.
+
+2. Source materials and limits
+
+The report is based on three supplied source files:
+
+- prompts.jsonl - 40 numbered tasks and their instructions
+- responses.jsonl - 40 numbered task responses from Gemini and Grok.
+- evaluations.jsonl - 40 numbered English evaluation narratives.
+
+Important limitations: The evaluation narratives are working assessments, not an independently verified gold-standard dataset. They do not contain a complete machine-readable table of final numeric scores. Consequently, this draft does not report invented error frequencies, overall model win rates, or average scores. Examples below are selected cases, not a comprehensive counted sample. The evaluator should verify source quotes, judgments, and model labels before publication. Some file headings or inline translation labels refer to ChatGPT, so the source-label consistency needs a separate check.
+
+3. Preliminary findings
+   The reviewed examples show several distinct error types. An answer can be grammatically fluent but still fail because it changes the user's meaning, makes an unsupported assumption, or treats a context-dependent expression as having one fixed meaning. A correct final sentence does not guarantee a correct explanation.
+
+A. Incorrect grammatical explanation
+
+SRB-EVR-013 - Grok. Both models corrected the phrase to _Imam pet knjiga i dve knjige_. However, Grok described nouns after 2, 3 and 4 as nominative plural. This is not a reliable general rule. Feedback: Explain numeral agreement accurately, including the feminine form _dve_; avoid broad rules that do not hold across noun types.
+
+B. Unnecessary correction of valid Serbian
+
+SRB-EVR-014 - Grok. The task required fixing only grammar mistakes. Grok rewrote _nisam nikad bio tamo_ as _nikad nisam bio tamo_, even though the original word order is grammatical. Feedback: Check if a real error exists before editing. Do not present a stylistic choice as a required correction.
+
+C. Unsupported change of meaning
+
+SRB-EVR-017 - Gemini. The ambiguous sentence about a man and a job was rewritten as _To je čovek kojem sam juče ponudio posao_. The new verb _ponudio_ introduces a job offer not established by the original. Feedback: When several interpretations are possible, mark alternatives clearly and do not add facts.
+
+SRB-EVR-030 - Gemini and Grok. Gemini's alternative _Zašto si paničar?_ changes a temporary reaction into a personality trait. Grok's _naljutio / uzbudio_ misses or weakens the sense of worry or panic in _ufrkis'o_. Feedback: Preserve the main meaning first; explain lost dialect tone separately.
+
+D. Overconfident judgment about politeness or social meaning
+
+SRB-EVR-025 - Gemini. Gemini described _Boli me uvo_ as not rude and completely polite. The phrase can sound dismissive or disrespectful depending on tone and situation. Feedback: Distinguish a non-swear-word expression from a socially polite expression; describe context-sensitive risks.
+
+SRB-EVR-040 - Gemini. Gemini strongly assumes that a close friend's sarcastic remark is friendly and causes laughter. A close relationship does not guarantee that a comment will be received positively. Feedback: Prefer _may_, _can_, and _depending on tone_ where intent cannot be verified.
+
+E. Context not preserved
+
+SRB-EVR-033 - Gemini. Asked for a sincere compliment in the same situation where a friend arrived an hour late, Gemini offered praise for arriving on time. Feedback: Keep the original situation unchanged. If the request has a tension or contradiction, explain it and suggest an honest alternative that fits the facts.
+
+F. Incorrect or unnatural example
+
+SRB-EVR-036 - Grok. The encouragement example _Samo ti radi, izaći će na kraj_ uses a third-person form without a clear subject where a direct second-person message is intended. Feedback: For direct encouragement, use _Samo ti radi, izaći ćeš na kraj_ or another natural second-person expression.
+
+G. Incorrect idiom paraphrase
+
+SRB-EVR-037 - Grok. _Ko te šiša!_ was paraphrased with _Šta te briga!_ and _Nije tvoja stvar_, shifting the message from dismissing a person to telling someone that a matter is not their business. Feedback: Check whether the subject, target, and social force of an idiom stay the same.
+
+SRB-EVR-031 - Gemini. _To land on one's feet_ can imply doing well after difficulty, which is not required by _Pala mu sekira u med_. Feedback: Choose English expressions that preserve the likely context, not just a generally positive outcome.
+
+H. Too much certainty about unclear intentions
+
+SRB-EVR-032 - Gemini. The response proposed that a manager saying _Videćemo_ might hope the proposal will be forgotten. That is a possible scenario, not a conclusion supported by the message. Feedback: Separate possible interpretations from claims about the speaker's actual intention.
+
+I. Oversimplified explanation of pragmatic particles
+
+SRB-EVR-023 - Gemini and Grok. Both mainly associated _be_ and _bre_ with friendly speech. These particles may also appear in frustration or conflict. Grok's claim that _bre_ is inherently stronger and _be_ softer is too broad. Feedback: Explain variation by region, speaker, tone, and relationship.
+
+4. Proposed taxonomy for annotation
+
+Code / Category / When to use it
+
+| Code                         | Category                   | When to use it                                                             |
+| ---------------------------- | -------------------------- | -------------------------------------------------------------------------- |
+| GRAM_RULE_ERROR              | Incorrect grammar rule     | A rule or grammatical label is wrong or misleading                         |
+| UNNECESSARY_EDIT             | Unnecessary correction     | The model changes valid text despite a minimal-edit instruction            |
+| SEMANTIC_SHIFT               | Meaning changed            | A correction or paraphrase adds or changes important meaning               |
+| UNSUPPORTED_ASSUMPTION       | Unsupported detail         | The model invents circumstances, motives, or commitments                   |
+| PRAGMATIC_OVERGENERALIZATION | Social meaning overclaimed | A context-sensitive expression is described too absolutely                 |
+| CONTEXT_VIOLATION            | Context not preserved      | The answer changes facts given in the prompt                               |
+| UNNATURAL_EXAMPLE            | Unnatural example          | An example contains grammar or phrasing problems                           |
+| IDIOM_LOCALIZATION_ERROR     | Idiom translation problem  | The equivalent misses the original meaning or tone                         |
+| LIMITED_CONTEXT              | Missing relevant nuance    | The answer is broadly correct but omits an important requested distinction |
+
+_Counting rule for the final report_: Count a category _once per model response per test_, even if it appears more than once. Record severity separately. A single response can have multiple categories. Do not sum category counts as if they were unique failed responses. 5. Recommendations
+
+1. Preserve the user's meaning. Do not add job offers, changed meeting outcomes, or assumed personal motives.
+2. Treat uncertainty carefully. For sarcasm, politeness, and regional speech, describe what an expression can mean under different conditions.
+3. Distinguish grammar from style. Minimal-correction tasks must leave valid alternatives unchanged.
+4. Verify rules and examples separately. A correct corrected sentence can be followed by an inaccurate grammar explanation.
+5. Evaluate localization by context. A natural English phrase is not always a faithful translation of a Serbian idiom.
+6. Keep feedback actionable. Every error note should state what changed, why it matters, and what a better response would do.
+7. Follow-up QA checklist
+
+- [ ] Confirm that the 40 prompt IDs align across all three files.
+- [ ] Check model labels in headings and inline notes; do not silently relabel sources.
+- [ ] Review whether each example above is a real error or a reasonable variant.
+- [ ] Confirm final preferred_response, rubric scores, and status for each test.
+- [ ] Build an annotated count table of error categories by model.
+- [ ] Add exact counts and denominators only after the tagging review.
+- [ ] Create the correction dataset from the approved cases.
+- [ ] Publish a README describing scope, methodology, limits, and evaluator role.
+
+7. Current conclusion
+   The initial review suggests that the largest quality risks are not limited to spelling and grammar. Several documented mistakes involve preserving meaning, following constraints, and interpreting informal Serbian in context. The evidence in this draft supports examples of those problems, but not a statistical claim about which model is better overall. A final report should be produced after the evaluator reviews the tags and numeric results.

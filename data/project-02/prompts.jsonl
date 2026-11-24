@@ -1,0 +1,299 @@
+// ** Original prompts used to past to LLM's, precisely to Grok and ChatGPT ** //
+
+** Everyday Serbian & Register **
+
+
+
+
+1. SRB-EVR-001 - Late Arrival - Workplace Communication
+
+"Brate, kasnim na posao nekih 20 minuta. Kako da javim šefu normalno, bez preteranog izvinjavanja?"
+Kriterijumi: Prirodna i kratka poruka šefu, primeren profesionalni ton, bez preteranog izvinjavanja i bez izmišljanja razloga kašnjenja.
+
+
+2. SRB-EVR-002 - Sarcasm & Implicit Meaning Recognition
+
+Prompt: "Šta znači kad neko kaže „Ma važi, baš ti verujem” i kako da znam da li je sarkastičan?"
+Kriterijumi: Prepoznavanje mogućeg sarkazma, razlikovanje sarkastičnog i iskrenog značenja, uloga konteksta i intonacije, izbegavanje kategoričnih zaključaka.
+
+
+3.SRB-EVR-003 - Informal Apology & Conversational Tone
+
+Prompt: "Napiši poruku drugaru kome nisam odgovorio tri dana. Nek bude opušteno, bez izmišljanja izgovora."
+Kriterijumi: Prirodan neformalan ton, primerena poruka prijatelju, bez izmišljanja izgovora, sažetost.
+
+
+
+
+** Formality & Professional Communication **
+
+
+4. SRB-EVR-004 - Landlord Communication - Tone & Clarity
+
+Prompt: "Napiši kratak mejl stanodavcu: bojler ne radi od jutros, pitam kada može majstor da dođe. 
+Ljubazno, ali ne previše ukočeno."
+Kriterijumi: Ljubazan i jasan mejl stanodavcu, pomenut kvar bojlera i pitanje o dolasku majstora, bez preterane formalnosti.
+
+
+5. SRB-EVR-005 - Regional Expression & Pragmatic Interpretation
+
+Prompt: "Drugar mi je rekao „Ajde, be, ne zezaj”. Objasni šta znači i da li je nužno uvreda."
+Kriterijumi: Tačno tumačenje regionalnog izraza, uloga konteksta i tona, razlikovanje zadirkivanja od uvrede, bez stereotipa.
+
+
+6. SRB-EVR-006 - Polite Invitation Decline
+
+Prompt: "Zovu me na rođendan, ali ne mogu da dođem. Napiši kratku poruku da odbijem, a da ne zvuči hladno. Nemoj da izmisliš razlog."
+Kriterijumi: Jasno odbijanje bez izgovora, toplina i prirodnost.
+
+
+7. SRB-EVR-007 - Municipal Office Communication
+
+"Treba da pitam u opštini koji dokumenti mi trebaju za prijavu prebivališta. Sastavi pitanje za šalter, bez nabrajanja dokumenata."
+Kriterijumi: Poštovanje ograničenja, jednostavnost i administrativni registar.
+
+
+8. SRB-EVR-008 - Formal Address
+
+Prompt: "Preformuliši „Cimni me kad završiš” u poruku koleginici s kojom sam na „Vi”, ali da ne zvuči kao pravni dopis."
+Kriterijumi: Persiranje, očuvanje namere i prirodna profesionalnost.
+
+
+9. SRB-EVR-009 - Conditional Promise
+
+Prompt: "Poruka glasi „Videćemo se sutra, ako stignem”. Da li je to čvrsto obećanje? Odgovori kratko i objasni zašto."
+Kriterijumi: Razumevanje uslovnosti i izbegavanje nagađanja namere.
+
+
+10. SRB-EVR-010 - Minimal Proofreading
+
+Prompt: "Ispravi samo pravopis i interpunkciju u rečenici „A bre što me ne zoveš kad stigneš” — nemoj da menjaš stil ni reči."
+Kriterijumi: Pravopis, interpunkcija i očuvanje originalnog izraza.
+
+
+
+
+
+*** Category 02 - Serbian Grammar & Syntax ***
+
+
+
+11. SRB-EVR-011 - Dative Case
+
+Prompt: "Koja rečenica je pravilna: „Nedostaješ me” ili „Nedostaješ mi”? Objasni ukratko i napiši još jedan primer."
+Kriterijumi: Tačan padež, ispravno gramatičko objašnjenje, kratak i prirodan primer.
+
+
+
+12. SRB-EVR-012 - Verb Government
+
+Prompt: "Ispravi rečenicu „To zavisi od situaciju” i u jednoj rečenici objasni grešku."
+Kriterijumi: Pravilna upotreba genitiva, jasno objašnjenje i poštovanje zahteva za jednom rečenicom objašnjenja.
+
+
+
+13. SRB-EVR-013 - Numbers and Noun Agreement
+
+Prompt: "Napiši pravilno: „Imam pet knjiga i dva knjige.” Objasni zašto se oblici razlikuju, bez dugog gramatičkog predavanja."
+Kriterijumi: Pravilno slaganje brojeva sa imenicom, tačno objašnjenje i sažetost.
+
+
+
+14. SRB-EVR-014 - Negation and Word Order
+
+Prompt: "Ispravi samo gramatičke greške u rečenici „Ja ne znam ništa o tome i nisam nikad bio tamo”, a zatim objasni šta si promenio."
+Kriterijumi: Razlikovanje stvarne gramatičke greške od dopuštene varijante, minimalne izmene i tačnost objašnjenja.
+
+
+
+15. SRB-EVR-015 - Verbal Aspect
+
+Prompt: "Objasni razliku između „Pisao sam pismo” i „Napisao sam pismo” na jednostavnom srpskom i daj po jedan primer upotrebe."
+Kriterijumi: Razlikovanje svršenog i nesvršenog vida, preciznost i prirodni primeri.
+
+
+
+16. SRB-EVR-016 - Standard Serbian Formulation
+
+Prompt: "U rečenici „Trebam pomoć oko zadatka” predloži prirodniju standardnu formulaciju i objasni razliku bez vređanja govornika."
+Kriterijumi: Standardni srpski, razlikovanje norme i stvarne upotrebe, neutralan i pristojan ton.
+
+
+
+17. SRB-EVR-017 - Sentence Ambiguity
+
+Prompt: "Ispravi rečenicu „To je čovek kojeg sam mu juče rekao za posao” tako da bude jasna. Ako ima više mogućih značenja, navedi ih."
+Kriterijumi: Prepoznavanje sintaksičke nejasnoće, gramatički pravilne alternative i bez nametanja nepodržanog značenja.
+
+
+
+18. SRB-EVR-018 - Formal Imperative
+
+Prompt: "Preformuliši „Pošalji mi izveštaj kad budeš završio” tako da se jednoj osobi obraćaš sa „Vi”, uz što manje izmena."
+Kriterijumi: Dosledno persiranje, minimalne izmene, očuvanje originalnog značenja i prirodan poslovni ton.
+
+
+
+19. SRB-EVR-019 - Punctuation
+
+Prompt: "Dodaj potrebnu interpunkciju u „Ako stigneš javi mi pa ćemo krenuti” i kratko objasni zašto."
+Kriterijumi: Pravilno postavljanje zareza, razumevanje uslovne rečenice i kratko objašnjenje.
+
+
+
+20. SRB-EVR-020 - English Calque
+
+Prompt: "Rečenica „Napravio sam odluku da uzmem odmor” zvuči kao doslovan prevod. Preformuliši je u prirodan srpski i objasni šta nije dobro."
+Kriterijumi: Prepoznavanje doslovnog prevoda, idiomatski prirodan srpski i očuvanje originalne namere.
+
+
+
+
+
+*** Category 03 — Dialects & Regional Expressions ***
+
+
+21. SRB-EVR-021 - Southern Serbian Dialect
+
+Prompt: "Šta u južnosrpskom govoru znači „Kude će ideš, be?”? Prevedi na standardni srpski i objasni funkciju „be”, bez ismevanja dijalekta."
+Kriterijumi: Regionalno značenje, ispravan prevod na standardni srpski, funkcija partikule „be” i poštovanje dijalekta.
+
+
+
+22. SRB-EVR-022 - The Interjection “Lele”
+
+Prompt: "Objasni značenje uzvika „lele” u srpskom. Daj tri kratka primera u kojima izražava različite emocije i objasni zašto ne postoji jedan univerzalan engleski prevod."
+Kriterijumi: Različite emocionalne funkcije, tri prirodna primera i odgovarajuća kontekstualna lokalizacija.
+
+
+
+23. SRB-EVR-023 - The Particles “Be” and “Bre”
+
+Prompt: "Koja je razlika između „be” i „bre” u svakodnevnom srpskom govoru? Objasni njihovu upotrebu i zašto ih ne treba automatski prevoditi kao uvredu."
+Kriterijumi: Regionalne razlike, pragmatička funkcija, prirodni primeri i izbegavanje preteranih generalizacija.
+
+
+
+24. SRB-EVR-024 - Contextual Meaning of “Tepaj”
+
+Prompt: "U društvu neko vikne „Tepaj, tepaj!” dok drugi pokušava da popije piće naiskap. Objasni šta znači u ovom kontekstu i predloži prirodan engleski prevod."
+Kriterijumi: Razumevanje konteksta, funkcija bodrenja, prirodan engleski ekvivalent i očuvanje značenja.
+
+
+
+25. SRB-EVR-025 - The Expression “Boli me uvo”
+
+Prompt: "Objasni izraz „Boli me uvo” strancu koji uči srpski. Da li je uvek nepristojan? Daj primer neutralnog objašnjenja i prirodan engleski ekvivalent."
+Kriterijumi: Figurativno značenje, nivo nepristojnosti, ton i prirodan engleski prevod.
+
+
+
+26. SRB-EVR-026 - The Expression “Nema šanse”
+
+Prompt: "U kojim situacijama „Nema šanse!” znači odbijanje, a u kojim iznenađenje? Napiši po jedan kratak dijalog za oba značenja."
+Kriterijumi: Razlikovanje odbijanja i iznenađenja, prirodnost dijaloga i tačno kontekstualno značenje.
+
+
+
+27. SRB-EVR-027 - The Expression “Ajd’ polako”
+
+Prompt: "Objasni šta može značiti „Ajd' polako” kada se neko rastaje od prijatelja, a šta kada želi da požuri osobu. Zašto je kontekst važan?"
+Kriterijumi: Značenje pri rastanku, moguće ironično značenje, uloga intonacije i konteksta.
+
+
+
+28. SRB-EVR-028 - The Expression “Ma kakvi!”
+
+Prompt: "Objasni značenje „Ma kakvi!” u sledećem dijalogu: „Je l' bilo teško?” — „Ma kakvi!” Zatim objasni kako isti izraz može imati drugačiji ton u drugoj situaciji."
+Kriterijumi: Pravilno prepoznavanje poricanja, razumevanje razgovorne funkcije i promena tona.
+
+
+
+29. SRB-EVR-029 - The Expression “Pusti priču”
+
+Prompt: "Šta znači „Pusti priču” u neformalnom razgovoru? Objasni najmanje dva moguća značenja i napiši primer kada bi zvučalo neprijatno."
+Kriterijumi: Višeznačnost, najmanje dve odgovarajuće interpretacije i primer negativnog konteksta.
+
+
+
+30. SRB-EVR-030 - Dialect Standardization
+
+Prompt: "Prevedi na standardni srpski izraz „Što si se, bre, tol'ko ufrkis'o?” ali zatim objasni koje nijanse neformalnog tona se gube standardizacijom."
+Kriterijumi: Tačno očuvanje značenja, prirodna standardizacija i objašnjenje izgubljenih stilskih nijansi.
+
+
+
+
+
+*** Category 04 — Cultural Context & Pragmatics ***
+
+
+
+31. SRB-EVR-031 - The Idiom “Pala mu sekira u med”
+
+Prompt: "Objasni engleskom govorniku šta znači srpski izraz „Pala mu sekira u med”. Daj prirodan engleski ekvivalent ili parafrazu, a ne samo doslovan prevod."
+Kriterijumi: Tačno značenje idioma, razumevanje kulturnog konteksta, prirodna engleska lokalizacija i izbegavanje doslovnog prevoda.
+
+
+
+32. SRB-EVR-032 - Ambiguous “Videćemo”
+
+Prompt: "Šef mi je na predlog odgovorio samo „Videćemo”. Da li je to prihvatanje, odbijanje ili nešto treće? Objasni moguće interpretacije bez nagađanja njegove namere."
+Kriterijumi: Prepoznavanje neodređenosti, više mogućih značenja, profesionalni kontekst i izbegavanje pretpostavki.
+
+
+
+33. SRB-EVR-033 - Ironic Praise
+
+Prompt: "Drug je zakasnio sat vremena, a neko mu kaže „Svaka čast, baš si tačan!” Objasni značenje i napiši kako bi zvučala iskrena pohvala u istoj situaciji."
+Kriterijumi: Prepoznavanje sarkazma, razlika između doslovnog i stvarnog značenja, prirodnost primera i poštovanje konteksta.
+
+
+
+34. SRB-EVR-034 - Understated Praise
+
+Prompt: "Kada neko proba kolač i kaže „Nije loše”, šta to može značiti? Objasni kako ton i odnos sagovornika menjaju tumačenje."
+Kriterijumi: Razumevanje ublažene pohvale, mogućih negativnih značenja, intonacije i odnosa sagovornika.
+
+
+
+35. SRB-EVR-035 - Culturally Appropriate Refusal
+
+Prompt: "Komšija me zove na rakiju, a ja ne pijem alkohol. Napiši kratko, prijateljsko odbijanje na srpskom bez osuđivanja komšije i bez izmišljanja razloga."
+Kriterijumi: Ljubaznost, očuvanje ličnih granica, prirodan svakodnevni srpski i odsustvo izmišljenih izgovora.
+
+
+
+36. SRB-EVR-036 - Ambiguous “Samo ti radi”
+
+Prompt: "Neko kaže „Samo ti radi” osobi koja je napravila grešku. Objasni kako ista rečenica može biti podrška ili prikrivena kritika. Daj po jedan primer."
+Kriterijumi: Prepoznavanje podrške i prikrivene kritike, dva odgovarajuća primera i uloga tona i konteksta.
+
+
+
+37. SRB-EVR-037 - The Expression “Ko te šiša”
+
+Prompt: "Stranac pita šta znači „Ko te šiša!” u srpskom razgovoru. Objasni značenje, nivo grubosti i zašto doslovan engleski prevod može da zavara."
+Kriterijumi: Figurativno značenje, stepen nepristojnosti, uticaj odnosa sagovornika i prirodna engleska lokalizacija.
+
+
+
+38. SRB-EVR-038 - Two Levels of Formality
+
+Prompt: "Napiši dve kratke verzije istog zahteva „Javi mi kada stigneš”: jednu za bliskog druga, drugu za stariju koleginicu kojoj persiram. Značenje mora ostati isto."
+Kriterijumi: Dosledno persiranje, jasna razlika između neformalnog i formalnog registra, očuvanje namere i prirodnost.
+
+
+
+39. SRB-EVR-039 - Syntactic Ambiguity
+
+Prompt: "Rečenica glasi „Video sam čoveka sa dvogledom”. Objasni dva moguća značenja i predloži preformulacije koje uklanjaju dvosmislenost."
+Kriterijumi: Prepoznavanje oba tumačenja, gramatički pravilne preformulacije i precizno očuvanje značenja.
+
+
+
+40. SRB-EVR-040 - Joke or Insult
+
+Prompt: "Drug mi kaže „Ala si ti pametan!” nakon što napravim očiglednu grešku. 
+Objasni da li je to pohvala, sarkazam ili uvreda i kako naš odnos može promeniti doživljaj poruke."
+Kriterijumi: Prepoznavanje sarkazma, razlika između prijateljskog zadirkivanja i uvrede, uloga intonacije i međusobnog odnosa.

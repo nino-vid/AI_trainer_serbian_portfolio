@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {getProject} from '@/lib/project';export async function GET(){const p=getProject();return NextResponse.json({dataset:p.name,total:p.segments.length,segments:p.segments});}

@@ -1,0 +1,4 @@
+import Link from 'next/link';import {notFound} from 'next/navigation';import ReactMarkdown from 'react-markdown';import remarkGfm from 'remark-gfm';import {getDocument} from '@/lib/project';
+const docs={guidelines:'MRK_ANNOTATION_GUIDELINES_v1.1.md',changelog:'MRK_QA_CHANGELOG_v1.2.md',readme:'README.md'} as const;
+export function generateStaticParams(){return Object.keys(docs).map(slug=>({slug}));}
+export default async function Doc({params}:{params:Promise<{slug:string}>}){const {slug}=await params;if(!(slug in docs))notFound();const file=docs[slug as keyof typeof docs];return <><div className="breadcrumbs"><Link href="/">Projects</Link> / <Link href="/projects/01">Project 01</Link> / {slug}</div><div className="doc markdown"><ReactMarkdown remarkPlugins={[remarkGfm]}>{getDocument(file)}</ReactMarkdown></div></>;}
